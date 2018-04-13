@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="geo.placename" content="Douala, Littoral, Cameroun">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="Author" content="Dark Code">
+    <meta name="copyright" content="Copyright 2017 IAI Douala ">
+    <meta name="language" content="fr">
+    <meta name="twitter:image" content="<?= base_url?>favicon.png">
+    <title><?= $title ?> - <?= app\App::appName() ?></title>
+    <link rel="stylesheet" href="<?= base_url?>assets/css/neon.css">
+    <link rel="stylesheet" href="<?= base_url?>assets/css/style.css">
+    <link rel="shortcut icon" href="<?= base_url?>favicon.png">
+    <?= helpers\dom\Dom::addScript("jquery.js") ?>
+  </head>
+  <body class="bg-oreo">
+      <?= $content ?>
+      <?= helpers\dom\Dom::addScript("neon.js") ?>
+  </body>
+</html>
